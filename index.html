@@ -6,10 +6,14 @@
   <title>Presentation</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <script src="script.js"></script>
 </head>
-<header>
+
+
+<body>
+  <header class="center">
     <nav>
       <ul>
         <li><a href="#accueil">Accueil</a></li>
@@ -18,25 +22,40 @@
       </ul>
     </nav>
   </header>
-<body>
-  <h1>Développeur Fullstack</h1>
-  <section id="quiSuisje">
-    <h2>kriss clotilde</h2>
+  <main class="container_principal">
+    <section class="center" id="quiSuisje">
+      <h1>Développeur Fullstack</h1>
+      <h2>kriss clotilde</h2>
 
-  <div><img src="./asset/avatar-gratuit.png" /></div>
- </section>
- 
-  <section class="container_principal" id="PorteFolio">
-    <div><h3>Projets</h3></div>
-    <div class="container_secondaire">
-      <div class="titre"><h3>Bataille navale en réseau</h3></div>
-      <div class="bateau"><img src="./asset/bateau.svg"/></div>
-      <div class="texte_bateau"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ducimus recusandae distinctio nemo iusto pariatur architecto, earum harum! Natus magnam eos suscipit tempore incidunt ipsa doloribus. Enim nostrum ipsam a!</p></div>
+      <div class="avatar"><img src="./asset/avatar-gratuit.png" /></div>
+    </section>
+
+    <section id="PorteFolio">
+      <div>
+        <h3 class="center projeth3">Projets</h3>
+      </div>
+    </section>
+  </main>
+  <div class="container_secondaire">
+    <div id="projet1">
+      <div class="titre">
+        <h3>Bataille navale en réseau</h3>
+      </div>
+      <div class="bateau">
+        <p>Lorem ipsum dolor sit amet <img src="./asset/bateau.svg" />consectetur adipisicing elit. Magni ducimus
+          recusandae distinctio nemo iusto
+          pariatur architecto, earum harum! Natus magnam eos suscipit tempore incidunt ipsa doloribus. Enim nostrum
+          ipsam a!</p>
+      </div>
     </div>
-  </section>
-    
-  
-  <script src="anijs-min.js"></script>
+  </div>
+  <footer>
+    <img class="copy"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/All_rights_reserved_logo.svg/1200px-All_rights_reserved_logo.svg.png"></img>
+    &nbsp; kriss clotilde
+
+  </footer>
 </body>
-<footer><div><span><img class="copy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/All_rights_reserved_logo.svg/1200px-All_rights_reserved_logo.svg.png"></img> <span> &nbsp; kriss clotilde</span><div></div></footer>
+
+
 </html>
