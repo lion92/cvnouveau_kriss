@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 p {
@@ -97,4 +98,19 @@ footer img {
     margin-right: auto;
   }
 
+}
+#projet1, #projet2,#projet3, .avatar{
+  width: 100%;
+  height: 100%;
+  color: white;
+  border: 1rem solid white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+#projet1:hover, #projet2:hover, #projet3:hover, .avatar:hover{
+  background-color: blue;
+}
+html:hover{
+  background-color: lightblue;
 }
