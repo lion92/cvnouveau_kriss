@@ -53,6 +53,7 @@ img {
   padding: 1em;
   font-size: 1em;
   text-align: center;
+  background-color: white;
 }
 .container_principal {
   display: grid;

@@ -27,7 +27,7 @@ function init() {
   let sprite = new THREE.TextureLoader().load( './asset/star.png' );
   let starMaterial = new THREE.PointsMaterial({
     color: 0xaaaaaa,
-    size: 0.7,
+    size: 0.5,
     map: sprite
   });
 

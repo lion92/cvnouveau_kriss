@@ -11,7 +11,7 @@ closeToZeroTwo([7, 8, 9, -1, -2]);
 
 
 function changeColor() {
-  document.getElementsByTagName("html")[0].style.backgroundColor =
+  document.body("html")[0].style.backgroundColor =
     "#" + ((Math.random() * 0xffffff) << 0).toString(16);
 }
 const ratio=0.1;
