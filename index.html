@@ -8,38 +8,50 @@
   <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
-<script>function toggleel() {
- 
- 
-  if(document.querySelector("header").classList.contains("hide")){
-    document.querySelector("header").classList.remove("hide");
-    document.querySelector("header").classList.add("show");
-    console.log("aaa")
-  }
-  else {
-    console.log("bbb")
-    document.querySelector("header").classList.add("hide");
-    document.querySelector("header").classList.remove("show");
-  }
 
-}
+
+<script>function toggleel() {
+
+
+    if (document.querySelector("header").classList.contains("hide") || document.querySelector("header").classList.contains("hidep")) {
+
+      document.querySelector("header").classList.remove("hide");
+
+      document.querySelector("header").classList.add("show");
+      console.log("aaa")
+    }
+    else {
+      console.log("bbb")
+      document.querySelector("header").classList.add("hide");
+      document.querySelector("header").classList.remove("show");
+    }
+    document.querySelector("header").classList.remove("hidep");
+
+  }
 </script>
+
 <body>
-  <img id="hamburger"><i onclick="toggleel()" class="fas fa-bars"></i></img>
-  <header id="head" class="center">
-    
-    <nav>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#projet">Projet</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="fond"></div>
+  <div id="headham">
+    <div id="divham"><i onclick="toggleel()" class="fas fa-bars"></i></div>
+    <header id="head" class="hidep" class="center">
+
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#projet">Projet</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
   <main class="container_principal" id="accueil">
 
     <div class="presentation trace">
@@ -134,6 +146,8 @@
     })
 
   </script>
+  <script src="three.min.js"></script>
+  <script src="fond.js"></script>
   <script src="app.js"></script>
 </body>
 
