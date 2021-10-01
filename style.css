@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+* {
+  font-family: "Yellowtail", cursive;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+canvas {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+p {
+  color: white;
+}
+h3{
+ color: violet;
+}
+h1{
+  color:yellow
+}
+h2{
+  color: red;
+}
+
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.projeth3 {
+  font-size: 2em;
+  text-align: center;
+}
+header {
+  grid-column: 4;
+  font-size: 2rem;
+  background-color: cornflowerblue;
+}
+img {
+  width:100%;
+  border-radius: 50%;
+
+}
+
+#divham i{
+  padding: 1em;
+  font-size: 1em;
+  text-align: center;
+  background-color: white;
+}
+.container_principal {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+#headham{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 1em;
+}
+
+#headham div{
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 1;
+}
+
+header {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 8;
+
+}
+
+header ul{
+  display: flex;
+  z-index: 7;
+  flex-wrap: wrap;
+
+
+}
+
+header ul li{
+z-index: 8;
+}
+
+#quiSuisje{
+  text-align: center;
+  
+  grid-column: 4;
+  grid-row: 1;
+}
+.container_secondaire {
+  grid-column: 2;
+  grid-row: 3;
+  text-align: center;
+}
+.container_tertiaire {
+  grid-column: 4;
+  grid-row: 3;
+  text-align: center;
+}
+.container_quaternaire{
+  grid-column: 6;
+  grid-row: 3;
+  text-align: center;
+}
+
+footer {
+ 
+  grid-column: 1;
+  grid-row: 5;
+  margin: 1rem;
+  padding: 1rem;
+  color:white;
+
+}
+footer img {
+  width: 1em;
+}
+header{
+  border-bottom:0.1em solid black ;
+}
+
+#projet1 ,#projet2 ,#projet3{
+  width: 100%;
+
+  color: white;
+  border: 1rem solid white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  height: 100%;
+
+}
+
+
+#projet1:hover, #projet2:hover, #projet3:hover, .avatar:hover{
+  background-color: blue;
+}
+html:hover{
+  background-color: lightblue;
+}
+button:hover{
+  background-color:lightpink;
+
+}
+canvas{
+  height: 100vh;
+ 
+
+}
+body{
+  opacity: 1;
+}
+.trace{
+  opacity: 0;
+
+  
+  transform: translateY(-70px)
+  
+}
+.lion{
+  margin-top: 6.3em;
+  grid-column: 6;
+  grid-row: 1;
+  height: 100%;
+
+
+}
+.presentation{
+  margin-top: 6.3em;
+  grid-column: 2;
+  grid-row: 1;
+  height: 100%;
+  text-align: center;
+  
+
+}
+#hamburger{
+  grid-column: 1;
+  grid-row: 1;
+}
+.hide{
+  display: none;
+}
+.reveal{
+  opacity: 1;
+
+  transform: translateY(0px);
+  transition: 2s;
+}
+button{
+  padding: 0.5em;
+}
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
+  * {
+  margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  #typed, .typed-cursor{
+    font-size: 1em;
+  }
+ 
+  #divham i{
+    padding: 1.5em;
+    font-size: 1em;
+
+  
+  }
+  .hide{
+    display: none;
+    
+  }
+  .hidep{
+    display: none;
+   
+  }
+  .lion a{
+    font-size: 5em;
+  }
+  .container_principal {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+  }
+  ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer img {
+    display: none;
+  }
+  p{
+    font-size: 4em;
+  }
+  header, h1, h2,h3 ,button, .projeth3{
+    font-size: 7em;
+    text-align: center;
+  }
+  footer{
+    font-size: 4em;
+  }
+  #projet1, #projet2,#projet3, .avatar{
+    width: 100%;
+
+    color: white;
+    border: 1rem solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+}
