@@ -8,12 +8,30 @@
   <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
+<script>function toggleel() {
+ 
+ 
+  if(document.querySelector("header").classList.contains("hide")){
+    document.querySelector("header").classList.remove("hide");
+    document.querySelector("header").classList.add("show");
+    console.log("aaa")
+  }
+  else {
+    console.log("bbb")
+    document.querySelector("header").classList.add("hide");
+    document.querySelector("header").classList.remove("show");
+  }
 
+}
+</script>
 <body>
-  <header class="center">
+  <img id="hamburger"><i onclick="toggleel()" class="fas fa-bars"></i></img>
+  <header id="head" class="center">
+    
     <nav>
       <ul>
         <li><a href="#accueil">Accueil</a></li>
@@ -24,58 +42,98 @@
   </header>
   <main class="container_principal" id="accueil">
 
-    <section class="center" id="quiSuisje">
+    <div class="presentation trace">
+      <h1>Qualité : <span id="typed"></span></h1>
+      <p>Je suis kriss CLOTILDE, développeur en reconversion.</br> Je suis disponible pour un CDI en javascript de
+        préférence front et back. </br> Je suis plus à l'aise en back même si je souhaite être avant tout
+        FullSatck.</br></p>
+    </div>
+    <div class="lion trace"><a target="_blank"
+        href="https://krissclotilde.com/wp-content/uploads/2021/03/CV_2020-12-10_Kriss_CLOTILDE_DeveloppeurFullstack.pdf">Cliquer
+        -->CV
+        <div><img src="./asset/lion.png" alt="mon cv gardé par mon avatar" /></div>
+      </a></div>
+    <section class="center trace" id="quiSuisje">
       <button onclick="changeColor()">Changer la couleur</button>
       <h1>Développeur Fullstack</h1>
       <h2>kriss clotilde</h2>
+      <a target="_blank" href="https://www.linkedin.com/in/kriss-clotilde/">
+        <div class="avatar trace"><img src="./asset/avatar-gratuit.png" /></div>
+      </a>
 
-      <div class="avatar"><img src="./asset/avatar-gratuit.png" /></div>
+      <section id="PorteFolio">
+        <div>
+          <h3 class="center projeth3 trace" id="projet">Projets</h3>
+        </div>
+      </section>
     </section>
 
-    <section id="PorteFolio">
-      <div>
-        <h3 class="center projeth3" id="projet">Projets</h3>
-      </div>
-    </section>
+
+
+
+
+    <div class="container_secondaire">
+      <a target="_blank" href="https://bataillenavale.krissdeveloppeur.com/">
+        <div id="projet1" class="trace">
+
+          <div class="titre">
+            <h3>Bataille navale en réseau</h3>
+          </div>
+          <div class="bateau">
+            <img src="./asset/bateau.png" />
+            <p>j'ai créé un site de jeu en réseau de bataille navale avec express js pour créer mon api et jquery pour
+              le
+              front ainsi que mysql comme base de donnée. J'ai hébergé le tout sur O2switch</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="container_tertiaire">
+      <a target="_blank" href="https://krissclotilde.com/">
+        <div id="projet2" class="trace">
+          <div class="titre">
+            <h3>Site wordpress</h3>
+          </div>
+
+          <div class="wordpress">
+            <img src="./asset/wordpress.png" alt="projet wordpress kriss" />
+            <p> J'ai créé mon site wordpress seul et je l'ai alimenté par mon expérience
+              et mes projets</p>
+          </div>
+      </a>
+    </div>
+    </div>
+    <div class="container_quaternaire">
+      <a target="_blank" href="https://github.com/lion92/Airbabouche/">
+        <div id="projet3" class="trace">
+          <div class="java">
+            <h3>Projet compagnie aérienne</h3>
+          </div>
+          <div class="wordpress">
+            <img src="./asset/java.png" alt="projet java kriss" />
+            <p> J'ai crée un projet swing java pour la gestion d'une compagnie aérienne.</p>
+          </div>
+        </div>
+      </a>
+    </div>
   </main>
-
-  <div class="container_secondaire">
-    <div id="projet1">
-      <div class="titre">
-        <h3>Bataille navale en réseau</h3>
-      </div>
-      <div class="bateau">
-        <img src="./asset/bateau.png" /><p>j'ai créé un site de jeu en réseau de bataille navale avec express js pour créer mon api et jquery pour le front ainsi que mysql comme base de donnée. J'ai hébergé le tout sur O2switch</p>
-      </div>
-    </div>
-  </div>
-  <div class="container_tertiaire">
-    <div id="projet2">
-      <div class="titre">
-        <h3>Site wordpress</h3>
-      </div>
-      <div class="wordpress">
-         <img src="./asset/wordpress.png" alt="projet wordpress kriss" /><p> J'ai créé mon site wordpress seul et je l'ai alimenté par mon expérience
-          et mes projets</p>
-      </div>
-    </div>
-  </div>
-  <div class="container_quaternaire">
-    <div id="projet3">
-      <div class="java">
-        <h3>Projet compagnie aérienne</h3>
-      </div>
-      <div class="wordpress">
-         <img src="./asset/java.png" alt="projet java kriss"/><p> J'ai crée un projet swing java pour la gestion d'une compagnie aérienne.</p>
-      </div>
-    </div>
-  </div>
-  <footer id="contact">
+  <footer id="contact" class="trace">
     <img class="copy" alt="copyright"
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/All_rights_reserved_logo.svg/1200px-All_rights_reserved_logo.svg.png"></img>
     &nbsp; kriss clotilde
 
   </footer>
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ["Curieux", "Passionné", "Agile"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true,
+      showCursor: true
+
+    })
+
+  </script>
   <script src="app.js"></script>
 </body>
 
