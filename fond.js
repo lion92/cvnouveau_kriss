@@ -20,7 +20,7 @@ function init() {
       Math.random() * 600 - 300
     );
     star.velocity = 0;
-    star.acceleration = 0.02;
+    star.acceleration = 0.07;
     starGeo.vertices.push(star);
   }
 
@@ -31,8 +31,17 @@ function init() {
     map: sprite
   });
 
+  
+  let sprite2= new THREE.TextureLoader().load( './asset/lion.png' );
+  let starMaterial2 = new THREE.PointsMaterial({
+    color: 0xaaaaab,
+    size:1,
+    map: sprite2
+  });
+  lion = new THREE.Points(starGeo,starMaterial2);
   stars = new THREE.Points(starGeo,starMaterial);
   scene.add(stars);
+  scene.add(lion);
 
   window.addEventListener("resize", onWindowResize, false);
 
@@ -54,7 +63,7 @@ function animate() {
     }
   });
   starGeo.verticesNeedUpdate = true;
-  stars.rotation.y +=0.002;
+  stars.rotation.y +=0.001;
 
   renderer.render(scene, camera);
   requestAnimationFrame(animate);

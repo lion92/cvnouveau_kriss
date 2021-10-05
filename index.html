@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Porte folio kriss</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="style.css">
+
   <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -39,13 +41,14 @@
 <body>
   <div id="fond"></div>
   <div id="headham">
-    <div id="divham"><i onclick="toggleel()" class="fas fa-bars"></i></div>
+    <div onclick="toggleel()" id="divham"><i class="fas fa-bars"></i></div>
     <header id="head" class="hidep" class="center">
 
       <nav>
         <ul>
           <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#projet">Projet</a></li>
+          <li><a href="#projet">Projets</a></li>
+          <li><a href="#cv">CV</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
@@ -127,7 +130,37 @@
         </div>
       </a>
     </div>
+
+
   </main>
+  <div id="cv" class="top-bar trace" >
+    <button class="btn" id="prev-page">
+      <i class="fas fa-arrow-circle-left"></i> Prev Page
+    </button>
+    <button class="btn" id="next-page">
+      Next Page <i class="fas fa-arrow-circle-right"></i>
+    </button>
+    <span class="page-info">
+      Page <span id="page-num"></span> of <span id="page-count"></span>
+    </span>
+   <div id="divpdf"><canvas id="pdf-render"></canvas></div>
+    
+  </div>
+
+  <div class="container trace">
+    <h1>Formulaire de contact</h1>
+
+    <label for="emailAddress">Email</label>
+    <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+
+    <button onclick="envoimail()">Envoyer</button>
+
+  </div>
+
   <footer id="contact" class="trace">
     <img class="copy" alt="copyright"
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/All_rights_reserved_logo.svg/1200px-All_rights_reserved_logo.svg.png"></img>
@@ -144,10 +177,13 @@
 
     })
 
-  </script>
+  </script> 
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+<script src="js/main.js"></script>
   <script src="three.min.js"></script>
   <script src="fond.js"></script>
   <script src="app.js"></script>
+  <script src="mail.js"></script>
 </body>
 
 
