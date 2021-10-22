@@ -216,7 +216,7 @@ article img{
 }
 article p{margin-bottom: 2em;}
 
-@media screen and (max-device-width: 640px), screen and (max-width: 640px) {
+@media screen and (max-device-width: 640px), screen and (max-width: 700px) {
 
   * {
     margin: 0;
@@ -242,8 +242,8 @@ article p{margin-bottom: 2em;}
   article img{
     position: absolute;
     bottom: 0;
-    
-    left:0;
+    width: 20px;
+    height: 20px;
   }
   .titreDefil {
     font-size: 4em;
