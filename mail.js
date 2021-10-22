@@ -1,12 +1,13 @@
 function envoimail() {
+
   if (
     !(
       document.getElementById("emailAddress").value === "" ||
       document.getElementById("subject").value === ""
-    )
+    )&&validMail(document.getElementById("emailAddress").value)
   ) {
     console.log(document.getElementById("emailAddress").value);
-    fetch("http://localhost:8000/envoi/mail", {
+    fetch("https://memo.krissclotilde.com/envoi/mail", {
       method: "POST",
       body: JSON.stringify({
         texte: document.getElementById("subject").value,
@@ -17,10 +18,14 @@ function envoimail() {
       },
     }).then((resp) => {
       resp.json().then((data) => {
-        alert(data.message);
+        alert("Envoyer");
       });
     });
   } else {
-    alert("Veuillez remplir tous les champs");
+    alert("Veuillez remplir tous les champs et mettre un mail valide. Merci ");
   }
+}
+function validMail(mail)
+{
+    return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(mail);
 }
