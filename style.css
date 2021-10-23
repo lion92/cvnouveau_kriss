@@ -215,7 +215,17 @@ article img{
   left:0;
 }
 article p{margin-bottom: 2em;}
-
+.comp{
+  grid-column: 2;
+}
+.loisir{
+  grid-column: 6;
+}
+.cont{
+  grid-column-start: 3;
+  grid-column-end:6 ;
+  grid-row: 1;
+}
 @media screen and (max-device-width: 640px), screen and (max-width: 700px) {
 
   * {
@@ -246,7 +256,7 @@ article p{margin-bottom: 2em;}
     height: 20px;
   }
   .titreDefil {
-    font-size: 4em;
+    font-size: 1em;
   }
   #typed,
   .typed-cursor {

@@ -14,6 +14,8 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 
@@ -57,27 +59,33 @@
   <h1 class="titreDefil">Qualité : <span id="typed"></span></h1>
   <main class="container_principal" id="accueil">
 
-    <div class="bouge presentation trace">
+    <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="bouge presentation">
 
       <p>Je suis kriss CLOTILDE, développeur en reconversion.</br> Je suis disponible pour un CDI en javascript de
         préférence front et back. </br> Je suis plus à l'aise en back même si je souhaite être avant tout
         FullSatck.</br></p>
     </div>
-    <div class="bouge lion trace"><a target="_blank"
+    <div class="bouge lion "><a target="_blank"
         href="https://krissclotilde.com/wp-content/uploads/2021/03/CV_2020-12-10_Kriss_CLOTILDE_DeveloppeurFullstack.pdf">Cliquer
         -->CV
-        <div><img src="./asset/lion.png" alt="mon cv gardé par mon avatar" /></div>
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" ><img src="./asset/lion.png" alt="mon cv gardé par mon avatar" /></div>
       </a></div>
-    <section class="center trace" id="quiSuisje">
+    <section class="center " id="quiSuisje">
       <h1>Développeur Fullstack</h1>
       <h2>kriss clotilde</h2>
       <a target="_blank" href="https://www.linkedin.com/in/kriss-clotilde/">
-        <div class="bouge avatar trace"><img src="./asset/avatar-gratuit.png" /></div>
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" class="bouge avatar "><img src="./asset/avatar-gratuit.png" /></div>
       </a>
 
-      <section id="PorteFolio">
+      <section data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000" id="PorteFolio">
         <div>
-          <h3 class="center projeth3 trace" id="projet">Projets</h3>
+          <h3 class="center projeth3 " id="projet">Projets</h3>
         </div>
       </section>
     </section>
@@ -86,9 +94,11 @@
 
 
 
-    <div class="container_secondaire">
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000" class="container_secondaire">
       <a target="_blank" href="https://bataillenavale.krissdeveloppeur.com/">
-        <div id="projet1" class="trace">
+        <div id="projet1" >
 
           <div class="titre">
             <h3>Bataille navale en réseau</h3>
@@ -102,9 +112,11 @@
         </div>
       </a>
     </div>
-    <div class="container_tertiaire">
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000" class="container_tertiaire">
       <a target="_blank" href="https://krissclotilde.com/">
-        <div id="projet2" class="trace">
+        <div id="projet2" >
           <div class="titre">
             <h3>Site wordpress</h3>
           </div>
@@ -117,9 +129,11 @@
       </a>
     </div>
     </div>
-    <div class="container_quaternaire">
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000" class="container_quaternaire">
       <a target="_blank" href="https://github.com/lion92/Airbabouche/">
-        <div id="projet3" class="trace">
+        <div id="projet3" >
           <div class="java">
             <h3>Projet compagnie aérienne</h3>
           </div>
@@ -133,7 +147,10 @@
 
 
   </main>
-  <div id="cv" class="top-bar trace">
+
+  <div data-aos="flip-left"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000" id="cv" class="top-bar ">
     <button class="btn" id="prev-page">
       <i class="fas fa-arrow-circle-left"></i> Prev Page
     </button>
@@ -143,46 +160,59 @@
     <span class="page-info">
       Page <span id="page-num"></span> of <span id="page-count"></span>
     </span>
-    <div id="divpdf trace"><canvas id="pdf-render"></canvas></div>
+    <div id="divpdf "><canvas id="pdf-render"></canvas></div>
 
   </div>
-<section class="competence_section">
-  <div class="competence trace">
-    <h2>Competence</h2>
-    <span>Java 70%</span><progress class="java" max="100" value="70"></progress>
-    <span>Javascript 70%</span><progress class="javascript" max="100" value="70"></progress>
-    <span>Express 70%</span><progress class="javascript" max="100" value="70"></progress>
-    <span>Jest 70%</span> <progress class="javascript" max="100" value="70"></progress>
-    <span>React 60%</span> <progress class="javascript" max="100" value="70"></progress>
-    <span>Nest js 50%</span><progress class="javascript" max="100" value="70"></progress>
-    <span>Angular 50%</span>
-    <progress class="javascript" max="100" value="70"></progress>
-    <span>Mysql 70%</span> <progress class="javascript" max="100" value="70"></progress>
-    <span>Hibernate 50%</span><progress class="javascript" max="100" value="50"></progress>
-    <span>Spring 50%</span> <progress class="javascript" max="100" value="50"></progress>
+  <div  class="container_principal">
+    <section class="comp competence_section">
+      <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="competence ">
+        <h2>Competence</h2>
+        <span>Java 70%</span><progress class="java" max="100" value="70"></progress>
+        <span>Javascript 70%</span><progress class="javascript" max="100" value="70"></progress>
+        <span>Express 70%</span><progress class="javascript" max="100" value="70"></progress>
+        <span>Jest 70%</span> <progress class="javascript" max="100" value="70"></progress>
+        <span>React 60%</span> <progress class="javascript" max="100" value="70"></progress>
+        <span>Nest js 50%</span><progress class="javascript" max="100" value="70"></progress>
+        <span>Angular 50%</span>
+        <progress class="javascript" max="100" value="70"></progress>
+        <span>Mysql 70%</span> <progress class="javascript" max="100" value="70"></progress>
+        <span>Hibernate 50%</span><progress class="javascript" max="100" value="50"></progress>
+        <span>Spring 50%</span> <progress class="javascript" max="100" value="50"></progress>
 
+      </div>
+    </section>
+    <section data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+      class="loisir competence ">
+      <h2>Loisrs</h2>
+      <article class="bouge ">
+        <p>Je joue aux cartes magic. C'est un jeu de carte à collectionner et à jouer. </p><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR57sQXT0HaNbqW0THZWdBcTsI8D950g6YDgw&usqp=CAU"
+          alt="">
+      </article>
+      <article class="bouge ">
+        <p>Je joue au jeu de go qui est un jeu de stratégie asiatique.</p><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmRT7lQ5-Sg2jwmfmSvVmeeEWRBCNVQqX3aQ&usqp=CAU"
+          alt="">
+      </article>
+    </section>
+
+    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="cont container ">
+      <h1>Formulaire de contact</h1>
+
+      <label for="emailAddress">Email</label>
+      <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+
+
+      <label for="subject">Message</label>
+      <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+
+      <button onclick="envoimail()">Envoyer</button>
+
+    </div>
   </div>
-</section>
-<section class="competence trace"> 
-  <h2>Loisrs</h2>
-<article class="bouge trace"><p>Je joue aux cartes magic. C'est un jeu de carte à collectionner et à jouer. </p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR57sQXT0HaNbqW0THZWdBcTsI8D950g6YDgw&usqp=CAU" alt=""></article>
-<article class="bouge trace"><p>Je joue au jeu de go qui est un jeu de stratégie asiatique.</p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmRT7lQ5-Sg2jwmfmSvVmeeEWRBCNVQqX3aQ&usqp=CAU" alt=""></article>
-</section>
-  <div class="container trace">
-    <h1>Formulaire de contact</h1>
 
-    <label for="emailAddress">Email</label>
-    <input id="emailAddress" type="email" name="email" placeholder="Votre email">
-
-
-    <label for="subject">Message</label>
-    <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
-
-    <button onclick="envoimail()">Envoyer</button>
-
-  </div>
-
-  <footer id="contact" class="trace">
+  <footer data-aos="fade-up"
+  data-aos-anchor-placement="center-bottom" id="contact" >
     <img class="copy" alt="copyright"
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/All_rights_reserved_logo.svg/1200px-All_rights_reserved_logo.svg.png"></img>
     &nbsp; kriss clotilde
@@ -207,5 +237,8 @@
   <script src="mail.js"></script>
 </body>
 
+<script>
+  AOS.init();
+</script>
 
 </html>
