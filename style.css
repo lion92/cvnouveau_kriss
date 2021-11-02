@@ -141,9 +141,7 @@ header {
 .avatar:hover {
   background-color: blue;
 }
-html:hover {
-  background-color: lightblue;
-}
+
 button:hover {
   background-color: lightpink;
 }
@@ -226,7 +224,7 @@ article p{margin-bottom: 2em;}
   grid-column-end:6 ;
   grid-row: 1;
 }
-@media screen and (max-device-width: 640px), screen and (max-width: 700px) {
+@media screen and (max-device-width: 640px), screen and (max-width: 800px) {
 
   * {
     margin: 0;
@@ -246,7 +244,7 @@ article p{margin-bottom: 2em;}
   }
   article p{
     height: 100%;
-    font-size: 2em;
+    font-size: 1em;
     margin-bottom: 1em;
   }
   article img{
@@ -300,7 +298,7 @@ article p{margin-bottom: 2em;}
   h3,
   button,
   .projeth3 {
-    font-size: 3em;
+    font-size: 1em;
     text-align: center;
   }
   footer {
@@ -350,6 +348,7 @@ label {
   margin-right: 0px;
   margin-left: 0px;
   width: 100%;
+  font-size: 1em;
 }
 
 input[type="submit"] {
@@ -380,6 +379,7 @@ input[type="submit"]:hover {
 h1 {
   color: #ffc800;
   width: 100%;
+  font-size: 2em;
 }
 
 #divpdf {
@@ -459,3 +459,13 @@ h1 {
   animation-iteration-count: 1;
 }
 
+html{
+  background-color: black;
+}
+span,p, h3,h4{
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.titreDefil,#typed{
+  font-size: 2em;
+}
