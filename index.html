@@ -56,14 +56,17 @@
       </nav>
     </header>
   </div>
-  <h1 class="titreDefil">Qualité : <span id="typed"></span></h1>
+  <div>
+    <h1 class="titreDefil">Qualité : <span id="typed"></span></h1>
+  </div>
+
   <main class="container_principal" id="accueil">
 
     <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="bouge presentation">
 
       <p>Je suis kriss CLOTILDE, développeur en reconversion.</br> Je suis disponible pour un CDI en javascript de
         préférence front et back. </br> Je suis plus à l'aise en back même si je souhaite être avant tout
-        FullSatck.</br></p>
+        FullStack.</br></p>
     </div>
     <div class="bouge lion "><a target="_blank"
         href="https://krissclotilde.com/wp-content/uploads/2021/03/CV_2020-12-10_Kriss_CLOTILDE_DeveloppeurFullstack.pdf">Cliquer
@@ -71,6 +74,8 @@
         <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"><img src="./asset/lion.png"
             alt="mon cv gardé par mon avatar" /></div>
       </a></div>
+
+      
     <section class="center " id="quiSuisje">
       <h1 id="titre_Text">Développeur Fullstack</h1>
       <h2 id="prenom_Text">kriss clotilde</h2>
@@ -134,19 +139,26 @@
         </div>
       </a>
     </div>
+    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="container_quintenaire">
+      <a target="_blank" href="https://todolist.krissdeveloppeur.com/">
+        <div id="projet4">
 
-
+          <div class="titre">
+            <h3>Todolist</h3>
+          </div>
+          <div class="bouge bateau">
+            <img src="./asset/todolist.png">
+            <p>J'ai créé une todolist avec un système d'authentification. Cela me permet de gérer mes taches et de mieux
+              m'organiser. Je compte ajouté d'autres fonctionnalités.</p>
+          </div>
+        </div>
+      </a>
+    </div>
   </main>
 
   <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" id="cv" class="top-bar ">
-    <button class="btn" id="prev-page">
-      <i class="fas fa-arrow-circle-left"></i> Prev Page
-    </button>
-    <button class="btn" id="next-page">
-      Next Page <i class="fas fa-arrow-circle-right"></i>
-    </button>
     <span class="page-info">
-      Page <span id="page-num"></span> of <span id="page-count"></span>
+      <span style="display:none" id="page-num"></span> <span style="display:none" id="page-count"></span>
     </span>
     <div id="divpdf "><canvas id="pdf-render"></canvas></div>
 
@@ -220,13 +232,14 @@
   <script src="js/main.js"></script>
   <script src="three.min.js"></script>
   <div id="fond">
-  <script src="fond.js"></script></div>
+    <script src="fond.js"></script>
+  </div>
   <script src="app.js"></script>
   <script src="mail.js"></script>
 </body>
-<script>const context={titre:"Développeur FullStack", prenom:"kriss", nom:"CLOTILDE" }
-document.getElementById("titre_Text").innerHTML=context.titre;
-document.getElementById("prenom_Text").innerHTML=context.prenom+" "+context.nom
+<script>const context = { titre: "Développeur FullStack", prenom: "kriss", nom: "CLOTILDE" }
+  document.getElementById("titre_Text").innerHTML = context.titre;
+  document.getElementById("prenom_Text").innerHTML = context.prenom + " " + context.nom
 </script>
 
 <script>
