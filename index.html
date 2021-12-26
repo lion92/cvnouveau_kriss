@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
+})();
+</script>
+
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -205,8 +212,22 @@
 
       <label for="subject">Message</label>
       <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
-
-      <button onclick="envoimail()">Envoyer</button>
+<script type="text/javascript">
+     
+        emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
+        function sendmail(){
+                        let temparams={
+                            from_name:document.getElementById("emailAddress").value,
+                            to_name:"site kriss",
+                            message:document.getElementById("subject").value
+                        }
+                        emailjs.send("service_9hsvs9k", "template_6e8w65r",temparams).then(function(res){
+                            console.log("success");
+                        });
+                    }
+        
+        </script>
+      <button onclick="sendmail()">Envoyer</button>
 
     </div>
   </div>
@@ -237,6 +258,7 @@
   <script src="app.js"></script>
   <script src="mail.js"></script>
 </body>
+
 <script>const context = { titre: "Développeur FullStack", prenom: "kriss", nom: "CLOTILDE" }
   document.getElementById("titre_Text").innerHTML = context.titre;
   document.getElementById("prenom_Text").innerHTML = context.prenom + " " + context.nom
